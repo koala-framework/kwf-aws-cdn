@@ -5,7 +5,7 @@ class KwfAwsCdn_ClearCacheTypeAssets extends Kwf_Util_ClearCache_Types_Abstract
     {
         foreach (KwfAwsCdn_Helper::getAllDistributionIds() as $awscdnDistributionId) {
             $invalidator = new KwfAwsCdn_Invalidator(array('distributionId' => $awscdnDistributionId));
-            $invalidator->invalidatePath('/media/*');
+            $invalidator->invalidatePath('/assets/*');
         }
     }
 
