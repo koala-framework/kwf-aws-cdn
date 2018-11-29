@@ -1,0 +1,23 @@
+{
+    "name": "koala-framework/kwf-aws-cdn",
+    "description": "Deliver web assets using amazon cloudfront.",
+    "type": "library",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Simon Radner",
+            "email": "sr@vivid-planet.com"
+        }
+    ],
+    "require": {
+        "koala-framework/koala-framework": "~4.2 || ~5.0",
+        "aws/aws-sdk-php": "^2.8.31"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-0": {
+            "KwfAwsCdn_": ""
+        }
+    }
+}
