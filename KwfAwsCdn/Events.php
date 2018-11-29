@@ -1,8 +1,6 @@
 <?php
 class KwfAwsCdn_Events extends Kwf_Events_Subscriber
 {
-    const TEST_CDN_DOMAIN = 'test-awscdn-my.vw5.volkswagen.at';
-
     public function getListeners()
     {
         $ret = parent::getListeners();

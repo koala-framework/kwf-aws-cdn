@@ -17,8 +17,8 @@ class KwfAwsCdn_Invalidator
     public function __construct(array $config)
     {
         // distributionId is required
-        if (isset($config['distribution_id'])) {
-            $this->distributionId = $config['distribution_id'];
+        if (isset($config['distributionId'])) {
+            $this->distributionId = $config['distributionId'];
         }
 
         $accessKey = Kwf_Config::getValue('awscdn.access_key_id');
