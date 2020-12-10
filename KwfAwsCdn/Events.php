@@ -70,7 +70,7 @@ class KwfAwsCdn_Events extends Kwf_Events_Subscriber
 
         if ($awscdnDistributionId) {
             $invalidator = new KwfAwsCdn_Invalidator(array('distributionId' => $awscdnDistributionId));
-            $path = '/media/'.$ev->class.'/'.$ev->component->componentId.'/*';
+            $path = '/media/'.rawurlencode($ev->class).'/'.$ev->component->componentId.'/*';
             $invalidator->invalidatePath($path);
         }
     }
